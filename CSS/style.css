@@ -8,9 +8,26 @@
 .centrarCaja{
     margin:0px auto;
 }
+/* .sectionDoble{
+    display:grid;
+    grid-template-areas:
+    "cards scrolll scrolll";
+}
+.izquierda{
+    grid-area: cards;
+}
+.derecha{
+    grid-area: scrolll;
+} */
 .alinearTexto{
     text-align: center;
     margin: 16px auto;
+}
+.borde{
+    border: 2px double #030b09;
+    border-radius: 20px;
+    width:80%;
+    height: 80%;
 }
 /* ------------------------------------------MODULOS---------------------------------------- */
 body{
@@ -103,15 +120,9 @@ footer{
     height: 32px;
 
 }
-.bordeListaCircular{
-    padding:6px;
-    justify-items: center;
-    font-size: 22px;
-    border-radius:50%;
-    background-color: rgb(59, 168, 168);
-    align-items: center;
+.cajasIcons{
+    margin: 16px auto;
 }
-
 .lista{
     list-style-type: none;
     margin: 0px auto;
@@ -138,6 +149,16 @@ footer{
 .hFooter{
     font-family: helvetica;
 }
+/* ----------------------------------------------------------SERVICIOS-------------------------------------------------------------------- */
+.programas{
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.programas div{
+    margin:8px
+}
+/* ----------------------------------------------------------SERVICIOS-------------------------------------------------------------------- */
 
 /* ----------------------------------------------------SOFTWARE--------------------------------------------------------------- */
 .cajaApp{
@@ -193,4 +214,18 @@ footer{
     height: 56px;
     width: 56px;
     background-size: contain;
+}
+@media only screen and (min-width:800px){
+    .primeraSection .col-md-12{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .conteiner .margenContenido{
+        display: flex;
+        flex-direction: column;
+    }
+    .conteiner .margenContenido img{
+        width: 25%;
+    }
 }
