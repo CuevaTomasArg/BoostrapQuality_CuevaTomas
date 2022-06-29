@@ -4,6 +4,15 @@
     margin: 0px;
     padding: 0px;
 }
+/* ------------------------------------------MODULOS---------------------------------------- */
+.centrarCaja{
+    margin:0px auto;
+}
+.alinearTexto{
+    text-align: center;
+    margin: 16px auto;
+}
+/* ------------------------------------------MODULOS---------------------------------------- */
 body{
     background-color: #f1f9fe;
 }
@@ -38,9 +47,19 @@ body{
 #quienesSomos{
     align-items: center;
 }
+.programa{
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-color: #f1f9fe;
+    background-clip: border-box;
+}
 .sectionImpar{
     background-color: #6ba1cc;
     margin: 10px 0px;
+}
+.primeraSection{
+    margin-top:64px;
 }
 .imgIndex{
     width: 90%;
@@ -121,10 +140,6 @@ footer{
 }
 
 /* ----------------------------------------------------SOFTWARE--------------------------------------------------------------- */
-.alinearTexto{
-    text-align: center;
-    margin: 16px auto;
-}
 .cajaApp{
     display: flex;
     flex-direction: column;
